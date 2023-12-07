@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Links a repositorios de iconos-->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/general/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/general/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/general/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="img/general/favicon_io/site.webmanifest">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+  <!--links Hojas de estilo-->    
+  
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/contacto.css">
+  <!-- Título del sitio -->        
+  <title>Pixelarte - ¡Stickers...y más!</title>
+
+</head>
+<body>
+
+    
+    <!--Contenedor FLEX principal------------------------------------------------------->
+    <div class="contenedor-general" id="arriba">
+    
+      <!-- Seccion de Header (comun a todas la paginas)----------------------------->
+      <header class="contenedor-header"><!--FLEX que contiene logo + barra de menu-->
+          <img class="logo" src="img/general/pixelarte-logo.png" alt="Logo de Pixelarte">
+          <nav class="barra-menu">
+              <ul class="menu">
+                  <li><a href="admin.html">ADMIN</a></li>
+                  <li><a href="contacto.html">CONTACTO</a></li>
+                  <li><a href="estamos.html">DÓNDE ESTAMOS</a></li>
+                  <li><a href="productos.html">PRODUCTOS</a>
+                      <ul class="submenu">
+                          <li><a href="productos.html#seccion-imanes">Imanes</a></li>
+                          <li><a href="productos.html#seccion-imanes-decorativos">Imanes Decorativos</a></li>
+                          <li><a href="productos.html#seccion-llaveros">Llaveros</a></li>
+                          <li><a href="productos.html#seccion-polaroid">Polaroid</a></li>
+                          <li><a href="productos.html#seccion-stickers">Stickers</a></li>
+                          <li><a href="productos.html#seccion-tarjetas">Tarjetas</a></li>
+                      </ul>
+                  </li>                    
+                  <li><a href="nosotros.html">QUIENES SOMOS</a></li>
+                  <li><a href="index.html">INICIO</a></li>
+              </ul>
+          </nav>
+      </header>
+
+        <!-- Cuerpo principal---------------------------------------------------------->
+        <!--main class="contenedor-main" -->
+        <main>
+          <!-- link de volver -->
+          <p class="estilo-volver" ><a href="index.html">Inicio </a>/ Admin</p>
+ 
+          <div class="container mt-4">
+              <h1>Tabla de Mensajes</h1>
+              <button id="btnTraerMensajes" class="btn btn-dark mb-3">Traer Mensajes</button>
+              <table id="tablaMensajes" class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Id</th>  
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Fecha de Envío</th>
+                    <th scope="col">Mensaje</th>
+                    <th scope="col">Leído</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Aquí se llenarán dinámicamente las filas -->
+                </tbody>
+              </table>
+            </div>
+
+            <div class="container mt-4">
+              <h1>Formulario de Gestión</h1>
+              <form id="formularioContacto">
+                <div class="form-group">
+                  <label for="idInput">ID</label>
+                  <input type="text" class="form-control" id="idInput" placeholder="Ingrese el ID">
+                </div>
+                <div class="form-group">
+                  <label for="detalleInput">Detalle de la Gestión</label>
+                  <textarea class="form-control" id="detalleInput" rows="4" placeholder="Ingrese el detalle de la gestión"></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark">Enviar</button>
+              </form>
+            </div>
+
+        </main>
+
+        <!-- Seccion de Footer---------------------------------------------------------->
+        <footer>
+          <div class="contenedor-footer">
+              <div class="seccion-iconos">
+                  <div class="box">
+                      <h4>MEDIOS DE PAGO</h4>
+                      <div class="estilo-favicon">
+                          <a href="contacto.html" class="fas fa-credit-card"></a>
+                      </div> 
+                  </div>
+                  <div class="box">    
+                      <h4>MEDIOS DE ENVIO</h4>
+                      <div class="estilo-favicon">
+                          <a href="contacto.html" class="fas fa-shipping-fast"></a>
+                      </div> 
+                  </div>
+                  <div class="box">
+                      <h4>NUESTRAS REDES</h4>
+                      <div class="estilo-favicon">
+                          <a href="https://www.facebook.com/pixelarterafaela/" class="fab fa-facebook" target="_blank"></a>
+                          <a href="https://www.instagram.com/pixelarte._/" class="fab fa-instagram" target="_blank"></a>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <h4>CONTACTO</h4>
+                      <div class="estilo-favicon">
+                          <a href="mailto:pixelarterafaela@gmail.com" class="fas fa-envelope" target="_blank"></a>
+                          <a href="contacto.html" class="fas fa-chevron-right" target="_blank"></a>
+                      </div>
+
+                  </div>
+              </div>
+              <!--Info del Grupo de trabajo-->
+              <address class="seccion-desarrolladores">
+                  <small>
+                      <b>&copy; <a id="estilo-titulo-grupo22" href="equipo-14.html">Equipo 14 </a></b> /  CaC Comisión 23501  /  2023
+                  </small>
+              </address>        
+          </div>
+
+        </footer>
+    </div>        
+      <script src="js/admin.js"></script>
+</body>
+</html>
