@@ -6,7 +6,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     const formData = new FormData(document.getElementById('contactForm'));
 
     // Realizar el envío utilizando fetch
-    fetch('http://JulianLucero.pythonanywhere.com/mensajes', {
+    fetch('https://julianlucero.pythonanywhere.com/mensajes', {
     method: 'POST',
     body: formData
     })

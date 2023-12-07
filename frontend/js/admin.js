@@ -1,5 +1,5 @@
 document.getElementById('btnTraerMensajes').addEventListener('click', () => {
-    fetch('http://JulianLucero.pythonanywhere.com/mensajes')
+    fetch('https://julianlucero.pythonanywhere.com//mensajes')
       .then(response => response.json())
       .then(datos => {
         console.log("datos", datos)
@@ -36,7 +36,7 @@ document.getElementById('formularioContacto').addEventListener('submit', functio
     const formData = new FormData();
     formData.append('gestion', gestion); // Agregar el detalle a los datos del formulario
 
-    fetch(`http://JulianLucero.pythonanywhere.com/mensajes/${id}`, {
+    fetch(`https://julianlucero.pythonanywhere.com/mensajes/${id}`, {
       method: 'PUT',
       body: formData
     })
